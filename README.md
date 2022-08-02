@@ -4,3 +4,8 @@
 
 페이지 시작점
 pages > index.tsx
+
+노드버전 16.13.0
+
+typescript
+
