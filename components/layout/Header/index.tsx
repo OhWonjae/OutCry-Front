@@ -1,10 +1,9 @@
 import React from "react";
-
-import { BoxDiv } from "./head-style";
+import { Navigation } from "../Navigation/index";
 const Header: React.FC = () => {
   return (
     <>
-      <BoxDiv>경매</BoxDiv>
+      <Navigation />
     </>
   );
 };
