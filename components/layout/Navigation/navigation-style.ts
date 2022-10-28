@@ -1,12 +1,10 @@
 import styled from "@emotion/styled";
-export const NavigationStyle = styled.nav`
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-`;
+
 export const NavigationUlStyle = styled.ul`
   display: flex;
   list-style: none;
+  justify-content: right;
+  width: 100%;
 `;
 
 export const NavigationLiStyle = styled.li`
