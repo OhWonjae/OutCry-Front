@@ -1,3 +1,4 @@
+import { AttachmentType } from "./Attachment";
 interface itemType {
   label: string;
   value: string;
@@ -12,3 +13,13 @@ export const sortTypes: { [keys: string]: itemType } = {
 export const sortList: Array<itemType> = Object.keys(sortTypes).map(
   (sortType) => sortTypes[sortType]
 );
+export interface ProductTypes {
+  id: string;
+  name: string;
+  hopePrice: number;
+  currentPrice: number;
+  startingPrice: number;
+  remainTime: string;
+  isFavorite: boolean;
+  thumbnail: AttachmentType | null | undefined;
+}

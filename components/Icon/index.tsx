@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Interpolation, Theme } from "@emotion/react";
 interface IconTypes {
   path: string;
-  width?: number;
-  height?: number;
+  width?: string | number;
+  height?: string | number;
   onClick?: () => void;
   alt: string;
   styles?: Interpolation<Theme>;

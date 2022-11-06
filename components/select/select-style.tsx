@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const SelectStyle = styled.select`
-  width: 100%;
+  width: 49%;
   height: 50px;
   margin: 10px 5px 10px 0px;
   padding-left: 10px;

@@ -9,7 +9,7 @@ interface SearchBarTypes {
 export const SearchBar: React.FC<SearchBarTypes> = (props) => {
   const { value, onChange, onSubmit } = props;
   return (
-    <div css={{ width: "100%", marginLeft: "10px" }}>
+    <div css={{ width: "49%", marginLeft: "10px" }}>
       <SearchbarStyle value={value} onChange={onChange} />
       <SearchbarButtonStyle onClick={onSubmit}>검색</SearchbarButtonStyle>
     </div>
