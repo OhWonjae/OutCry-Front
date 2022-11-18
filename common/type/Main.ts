@@ -13,6 +13,16 @@ export const sortTypes: { [keys: string]: itemType } = {
 export const sortList: Array<itemType> = Object.keys(sortTypes).map(
   (sortType) => sortTypes[sortType]
 );
+export interface SearchOptions {
+  sort: string;
+  search: string;
+  page: number;
+}
+export interface ProductListTypes {
+  totalPage: number;
+  total: number;
+  data: Array<ProductTypes>;
+}
 export interface ProductTypes {
   id: string;
   name: string;

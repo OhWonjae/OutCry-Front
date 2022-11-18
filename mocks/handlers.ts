@@ -4,6 +4,8 @@ export const handlers = [
   rest.get("/products", (req, res, ctx) => {
     return res(
       ctx.status(200),
+      ctx.set("X-Total", "7"),
+      ctx.set("X-Total-Page", "2"),
       ctx.json<Array<ProductTypes>>([
         {
           id: "1",

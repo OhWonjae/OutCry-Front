@@ -9,8 +9,9 @@ interface MSWProviderTypes {
 export const MSWProvider: React.FC<MSWProviderTypes> = (props) => {
   const { children } = props;
   const [msw, setMsw] = useState(true);
-  const [show, setShow] = useState(true);
   const env = process.env.NODE_ENV;
+  const [show, setShow] = useState(env === "production" ? true : false);
+
   const syncMsw = async (bool: boolean) => {
     setShow(false);
     await init(bool);
